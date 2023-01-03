@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snakes_and_ladders.PlayGroundController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <ImageView fitWidth="300" fitHeight="500">
+            <image>
+                <Image url = "@grass.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitWidth="500" fitHeight="500" layoutX="300">
+            <image>
+                <Image url = "@GameBoard.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView fitWidth="250" fitHeight="50" layoutX="30" layoutY="20" >
+            <image>
+                <Image url = "@titleimage.jpg"/>
+            </image>
+        </ImageView>
+
+        <ImageView fitWidth="20" fitHeight="40" layoutY="325" layoutX="50">
+            <image>
+                <Image url = "@redtoken.png"/>
+            </image>
+        </ImageView>
+        <Text layoutX="100" layoutY="350" text = "Player 1"></Text>
+        <Text layoutX="100" layoutY="400" text = "Player 2"></Text>
+        <ImageView fitWidth="20" fitHeight="40" layoutY="375" layoutX="50">
+            <image>
+                <Image url = "@bluetoken.png"/>
+            </image>
+        </ImageView>
+
+        <Text fx:id="changeturn" layoutX="120" layoutY="120" text="Player 1's Turn"></Text>
+        <Text fx:id="number" layoutX="150" layoutY="250"></Text>
+
+        <ImageView fitWidth="50" fitHeight="50" layoutY="150" layoutX="125" onMouseClicked="#roll" >
+            <image>
+                <Image url = "@dice.jpg"/>
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="player1" fitWidth="20" fitHeight="50" layoutY="450" layoutX="255">
+            <image>
+                <Image url = "@redtoken.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="player2" fitWidth="20" fitHeight="50" layoutY="450" layoutX="275">
+            <image>
+                <Image url = "@bluetoken.png"/>
+            </image>
+        </ImageView>
+
+
+
+
+    </children>
+
+</AnchorPane>
